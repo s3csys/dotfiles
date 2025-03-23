@@ -1,0 +1,13 @@
+## installing requirements
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+choco install git starship (restart the terminal to load these packages)
+cd ~
+git clone https://github.com/s3csys/dotfiles.git ~/.dotfiles
+
+## Creating symlinks (cd into the dot files)
+New-Item -ItemType SymbolicLink -Path "$profile/Microsoft.PowerShell_profile.ps1" -Target ".\Microsoft.PowerShell_profile.ps1"
+New-Item -ItemType SymbolicLink -Path "~/.android" -Target ".\.android\"
+New-Item -ItemType SymbolicLink -Path "~/.starship" -Target ".\.starship\"
+New-Item -ItemType SymbolicLink -Path "~/alias.ps1" -Target ".\alias.ps1"
+New-Item -ItemType SymbolicLink -Path "~/.ssh/id_rsa" -Target ".\id_rsa"
+New-Item -ItemType SymbolicLink -Path "~/.ssh/id_rsa.pub" -Target ".\id_rsa.pub"
