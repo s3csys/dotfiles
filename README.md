@@ -128,7 +128,7 @@ This repository contains configuration files (dotfiles) for various tools and ap
 
 ## 🚀 Usage
 
-### [Tmux shortcuts](https://secsys.pages.dev/posts/tmux/){:target="_blank"}
+### <a href="https://secsys.pages.dev/posts/tmux/" target="_blank">Tmux shortcuts</a>
 
 - **Prefix Key**: Changed from `C-b` to `C-a`
 
@@ -196,7 +196,8 @@ This repository contains configuration files (dotfiles) for various tools and ap
   - Lock Screen (Security): `C-a L`
   - Kill Tmux Server: `C-a K`
 
-More Tmux commands can be found here: [Tmux Guide](https://secsys.pages.dev/posts/tmux/){:target="_blank"}
+More Tmux commands can be found here: <a href="https://secsys.pages.dev/posts/tmux/" target="_blank">Tmux Guide</a>
+
 
 ## 🎨 Customization
 You can customize your dotfiles by modifying the files inside `~/.dotfiles`. 
