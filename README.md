@@ -2,24 +2,25 @@
 
 Welcome to my personal collection of dotfiles. These configuration files are tailored to set up and maintain a consistent development environment across various systems.
 
-![Tmux Shortcuts](../zhsllzshpng)
+![shellzsh](shellzsh.png)
 
 ## Table of Contents
-- [Features](##features)
-- [Installation](##installation)
-  - [Linux](###linux)
-  - [Windows](###windows)
-- [Usage](##Usage)
-- [Customization](##customization)
-- [Updating](##updating)
-- [Contribution](##contribution)
-- [License](##license)
+- [✨ Features](#features)
+- [⚡ Installation](#installation)
+  - [🐧 Linux](#linux)
+  - [🪟 Windows](#windows)
+- [🚀 Usage](#usage)
+- [🎨 Customization](#customization)
+- [🔄 Updating](#updating)
+- [🤝 Contribution](#contribution)
+- [📜 License](#license)
+
 
 ## Introduction
 
 This repository contains configuration files (dotfiles) for various tools and applications I use daily. Managing these dotfiles helps in maintaining a consistent and efficient development environment across different machines.
 
-## Features
+## ✨ Features
 - Easy setup for Linux, macOS, and Windows
 - Symbolic link-based configuration management
 - Pre-configured settings for Zsh, Tmux, Remote sublime, starship, iterm, aliases and PowerShell ...
@@ -28,26 +29,26 @@ This repository contains configuration files (dotfiles) for various tools and ap
 ## Structure 
 
 ```bash
-.
-├── linux/
-│   ├── zshrc
-│   ├── tmux.conf
-│   └── ...
-├── mac/
-│   ├── zshrc
-│   ├── tmux.conf
-│   └── ...
-├── windows/
-│   ├── starship
-│   ├── powershell_profile.ps1
-│   └── ...
+📂 secsys-dotfiles
+├── 🐧 linux/
+│   ├── ⚙️ zshrc
+│   ├── 🎛️ tmux.conf
+│   ├── 📂 ...
+├── 🍏 mac/
+│   ├── ⚙️ zshrc
+│   ├── 🎛️ tmux.conf
+│   ├── 📂 ...
+├── 🪟 windows/
+│   ├── 🚀 starship
+│   ├── 📝 powershell_profile.ps1
+│   ├── 📂 ...
 │
-└── README.md
+└── 📖 README.md
 ```
 
-## Installation
+## ⚡ Installation
 
-### Linux
+### 🐧 Linux
 
 1. Install necessary dependencies and Oh My Zsh:
    ```sh
@@ -102,7 +103,7 @@ This repository contains configuration files (dotfiles) for various tools and ap
    prefix + I
    ```
 
-### Windows
+### 🪟 Windows
 
 1. Open PowerShell and check the execution policy:
    ```powershell
@@ -125,7 +126,7 @@ This repository contains configuration files (dotfiles) for various tools and ap
    New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.starship" -Target "C:\Users\$env:UserName\.dotfiles\windows\.starship"
    ```
 
-## Usage
+## 🚀 Usage
 
 ### [Tmux shortcuts](https://secsys.pages.dev/posts/tmux/){:target="_blank"}
 
@@ -197,7 +198,7 @@ This repository contains configuration files (dotfiles) for various tools and ap
 
 More Tmux commands can be found here: [Tmux Guide](https://secsys.pages.dev/posts/tmux/){:target="_blank"}
 
-## Customization
+## 🎨 Customization
 You can customize your dotfiles by modifying the files inside `~/.dotfiles`. 
 
 For example, to add new aliases:
@@ -209,13 +210,13 @@ Then, reapply the configuration:
 Prefix + R
 ```
 
-## Updating
+## 🔄 Updating
 Since **OhMyZsh-full-autoupdate** is installed, it will automatically handle updates for Zsh and dotfiles. However, if you need to manually update:
 ```sh
 omz update
 ```
 
-## Contribution
+## 🤝 Contribution
 Contributions are welcome! To contribute:
 1. **Fork** the repository.
 2. **Create a new branch** for your changes.
@@ -231,7 +232,7 @@ Contributions are welcome! To contribute:
    git push origin feature-branch
    ```
 
-## License
+## 📜 License
 This repository is open-source and available under the MIT License.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
