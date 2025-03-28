@@ -72,10 +72,10 @@ ${function:dl} = { Set-Location ~\Downloads }
 ###################################################
 
 # alias ping
-function ppp {
+function pinging {
     ping -n 100 8.8.8.8
 }
-Set-Alias -Name p -value ppp
+Set-Alias -Name p -value pinging
 
 # Create an alias 'dn' to shut down the computer
 Function Shutdown-Computer {
@@ -119,14 +119,6 @@ function touch($file) { "" | Out-File $file -Encoding ASCII }
 # Common Editing needs
 function hh { Invoke-Expression "sudo $(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'subl' }) $env:windir\system32\drivers\etc\hosts" }
 function epr { Invoke-Expression "$(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'subl' }) $profile" }
-
-# Get-ExecutionPolicy ==> to check excurion policy
-# Set-ExecutionPolicy RemoteSigned -Scope CurrentUser ==> allowing the scripts to run 
-# . C:\Users\$user\.dotfiles\windows\alias.ps1
-# New-Item -ItemType SymbolicLink -Path "C:\Users\$user\OneDrive\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -Target ".\Microsoft.PowerShell_profile.ps1"
-# cd into git dotfiles directory
-# symlink ~/.android C:\Users\$user\.dotfiles\windows\.android\
-# symlink ~/.starship C:\Users\$user\.dotfiles\windows\.starship\
 
 Function symlink {
   [CmdletBinding()]
