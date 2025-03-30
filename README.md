@@ -88,17 +88,22 @@ This repository contains configuration files (dotfiles) for various tools and ap
    source ~/.zshrc
    ```
 
-7. Add the dotfiles repository to Oh My Zsh plugins:
+7.  Install the remote subl package
+    ```sh
+    curl -so /usr/local/bin/subl https://raw.githubusercontent.com/aurora/rmate/master/rmate && chmod +x /usr/local/bin/subl
+    ```
+
+8. Add the dotfiles repository to Oh My Zsh plugins:
    ```sh
    ln -s ~/.dotfiles ${ZSH_CUSTOM}/plugins/dotfiles
    ```
 
-8. Reload shell:
+9. Reload shell:
    ```sh
    source ~/.zshrc
    ```
 
-9. Pull the tmux plugins prefix key  (ctrl + a)
+10. Pull the tmux plugins prefix key  (ctrl + a)
    ```bash
    prefix + I
    ```
