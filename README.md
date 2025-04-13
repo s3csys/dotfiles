@@ -84,7 +84,7 @@ This repository contains configuration files (dotfiles) for various tools and ap
 6. Create symbolic links for configuration files:
    ```sh
    mkdir ~/dotfiles_bak
-   for i in $(ls ~/.dotfiles/linux/); do mv ~/.$i ~/dotfiles_bak/ && ln -s ~/.dotfiles/linux/$i ~/.$i; done
+   for i in ~/.dotfiles/linux/*; do f=$(basename "$i"); [ -e ~/.$f ] && mv ~/.$f ~/dotfiles_bak/; ln -sf "$i" ~/.$f; done
    source ~/.zshrc
    ```
 
@@ -107,6 +107,11 @@ This repository contains configuration files (dotfiles) for various tools and ap
    ```bash
    prefix + I
    ```
+
+remove all the symlinked dotfiles
+```bash
+for i in ~/.dotfiles/linux/*; do f=$(basename "$i"); [ -L ~/.$f ] && rm ~/.$f; done
+```
 
 ### 🪟 Windows
 
